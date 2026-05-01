@@ -1,0 +1,4 @@
+.bar-item.active {
+  background: var(--accent-border);
+  border: 1px solid var(--accent);
+}

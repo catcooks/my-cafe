@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "Espresso Beans (1kg)",
+      "category": "Ingredients",
+      "price": "$18.50",
+      "stock": 24,
+      "status": "In Stock"
+    },
+    {
+      "id": 2,
+      "name": "Oat Milk (1L)",
+      "category": "Dairy/Alt",
+      "price": "$4.20",
+      "stock": 5,
+      "status": "Low Stock"
+    },
+    {
+      "id": 3,
+      "name": "Caramel Syrup",
+      "category": "Add-ons",
+      "price": "$8.00",
+      "stock": 0,
+      "status": "Out of Stock"
+    },
+    {
+      "id": 3,
+      "name": "Caramel Syrup",
+      "category": "Add-ons",
+      "price": "$8.00",
+      "stock": 0,
+      "status": "Out of Stock"
+    },
+    {
+      "id": 3,
+      "name": "Caramel Syrup",
+      "category": "Add-ons",
+      "price": "$8.00",
+      "stock": 0,
+      "status": "Out of Stock"
+    },
+    {
+      "id": 3,
+      "name": "Caramel Syrup",
+      "category": "Add-ons",
+      "price": "$8.00",
+      "stock": 0,
+      "status": "Out of Stock"
+    },
+    {
+      "id": 3,
+      "name": "Caramel Syrup",
+      "category": "Add-ons",
+      "price": "$8.00",
+      "stock": 0,
+      "status": "Out of Stock"
+    }
+]
+  
