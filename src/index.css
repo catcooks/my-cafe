@@ -75,11 +75,18 @@ h2 {
   box-sizing: border-box;  
 }
 
-.button-group {
+.icon-btn{
+  font-family: var(--sans);
+  padding: 5px;
+  border-radius: 100%; 
+  border: 0px;
+  margin: 0px;
   display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin-top: 24px;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+}
+.icon-btn:hover{
+  background: #8585852e;
 }
 
 button {
@@ -133,4 +140,16 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent); 
+}
+input{
+  width: 100%;
+  margin: 10px auto;
+  border: 2px solid var(--accent);
+  border-radius: 90px;
+  appearance: none; 
+  -webkit-appearance: none; 
+  outline: none;
+  font-family: inherit; 
+  background-color: var(--bg);
+  color: var(--text-h); 
 }

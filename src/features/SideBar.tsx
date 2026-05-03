@@ -7,7 +7,7 @@ import {
   ClipboardList, 
   Package, 
   Settings,
-  Menu,
+  Table,
 } from 'lucide-react';
 // 1. Define an interface for the component props
 interface SideBarProps {
@@ -53,10 +53,6 @@ const SideBar: React.FC<SideBarProps> = ({ title, activeTab, setActiveTab }) => 
         isActive={activeTab === "Products"} 
         onClick={() => setActiveTab("Products")}
       />
-      <BarItem title="Menu" icon={<Menu />}
-        isActive={activeTab === "Menu"} 
-        onClick={() => setActiveTab("Menu")}
-      />
       <BarItem title="Staff" icon={<Users />}
         isActive={activeTab === "Staff"} 
         onClick={() => setActiveTab("Staff")}
@@ -68,6 +64,10 @@ const SideBar: React.FC<SideBarProps> = ({ title, activeTab, setActiveTab }) => 
       <BarItem title="Reservations" icon={<Settings />}
         isActive={activeTab === "Reservations"} 
         onClick={() => setActiveTab("Reservations")}
+      />
+      <BarItem title="Tables" icon={<Table />}
+        isActive={activeTab === "Tables"} 
+        onClick={() => setActiveTab("Tables")}
       />
     </div>
   );

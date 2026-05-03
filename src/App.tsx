@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import SideBar from "./features/SideBar";
 import DashBoard from "./features/View/DashBoard";
 import Orders from "./features/View/Orders";
-import Menu  from "./features/View/Menu";
+import Inventory  from "./features/View/Inventory";
+import Products from "./features/View/Products"
 import "./App.css";
 
 const App: React.FC = () => {
@@ -27,7 +28,9 @@ const App: React.FC = () => {
       <div style={{ flexGrow: 1, padding: "20px" }}>
         {activeTab === "Dashboard" && <DashBoard />}
         {activeTab === "Orders" && <Orders />}
-        {activeTab === "Menu" && <Menu />}
+        {activeTab === "Inventory" && <Inventory />}
+        {activeTab === "Products" && <Products />}
+
       </div>
     </div>
   );
