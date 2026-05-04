@@ -2,14 +2,17 @@
   "name": "my-cafe",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://catcooks.github.io/my-cafe/",
   "type": "module",
-  "scripts": {
+"scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "dependencies": {
+"dependencies": {
     "lucide-react": "^1.12.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
@@ -27,6 +30,7 @@
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.5.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
