@@ -32,7 +32,7 @@ export const useMenu = () => {
 
   useEffect(() => {
     // Assuming your json is in the public folder
-    fetch('/menu.json')
+    fetch(`${import.meta.env.BASE_URL}menu.json`)
       .then((res) => res.json())
       .then((data) => {
         setMenuData(data);

@@ -16,7 +16,7 @@ export const useReservations = (refreshIntervalMs = 5000) => {
   useEffect(() => {
     // 1. Define the fetch logic using .then() instead of await
     const fetchReservations = () => {
-      fetch('/reservations.json')
+      fetch(`${import.meta.env.BASE_URL}reservations.json`)
         .then((response) => {
           if (!response.ok) {
             throw new Error('Failed to load reservations');

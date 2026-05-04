@@ -1,10 +1,24 @@
-import { useState } from "react";
-import inventory from "../../../public/inventory.json";
+import { useState, useEffect } from "react";
+// import inventory from "../../../public/inventory.json"; // Removed
 import { InventoryTable } from "../Controller/Inventory";
 
+export interface InventoryItem {
+  name: string;
+  unit: string;
+  price: string;
+  stock: number;
+  status: string;
+}
+
 const Inventory: React.FC = () => {
-  const [items] = useState(inventory);
+  const [items, setItems] = useState<InventoryItem[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}inventory.json`)
+      .then(res => res.json())
+      .then(data => setItems(data));
+  }, []);
   
   const filteredItems = items.filter((item) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())

@@ -15,7 +15,7 @@ const Tables: React.FC = () => {
   const [selectedTable, setSelectedTable] = useState<TableData | null>(null);
 
   useEffect(() => {
-    fetch('/tables.json')
+    fetch(`${import.meta.env.BASE_URL}tables.json`)
       .then(res => res.json())
       .then(data => setTables(data));
   }, []);

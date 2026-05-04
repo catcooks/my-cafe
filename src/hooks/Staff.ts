@@ -14,7 +14,7 @@ export const useStaff = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/staff.json')
+    fetch(`${import.meta.env.BASE_URL}staff.json`)
       .then((res) => res.json())
       .then((data) => {
         setStaff(data);
