@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Coffee Beans",
+    "unit": "Kilogram",
+    "price": "$12.50",
+    "stock": 8,
+    "status": "In Stock"
+  },
+  {
+    "name": "Water",
+    "unit": "Liter",
+    "price": "$0.50",
+    "stock": 100,
+    "status": "In Stock"
+  },
+  {
+    "name": "Milk",
+    "unit": "Liter",
+    "price": "$2.80",
+    "stock": 12,
+    "status": "In Stock"
+  },
+  {
+    "name": "Foam",
+    "unit": "Liter",
+    "price": "$1.20",
+    "stock": 4,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Chocolate Syrup",
+    "unit": "Liter",
+    "price": "$5.50",
+    "stock": 6,
+    "status": "In Stock"
+  },
+  {
+    "name": "Milk Foam",
+    "unit": "Liter",
+    "price": "$1.50",
+    "stock": 3,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Ice",
+    "unit": "Kilogram",
+    "price": "$1.00",
+    "stock": 15,
+    "status": "In Stock"
+  },
+  {
+    "name": "Chocolate Powder",
+    "unit": "Kilogram",
+    "price": "$6.20",
+    "stock": 5,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Tea Leaves",
+    "unit": "Kilogram",
+    "price": "$8.00",
+    "stock": 7,
+    "status": "In Stock"
+  },
+  {
+    "name": "Tea Mix",
+    "unit": "Kilogram",
+    "price": "$7.50",
+    "stock": 5,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Flour",
+    "unit": "Kilogram",
+    "price": "$2.20",
+    "stock": 20,
+    "status": "In Stock"
+  },
+  {
+    "name": "Butter",
+    "unit": "Kilogram",
+    "price": "$9.40",
+    "stock": 6,
+    "status": "In Stock"
+  },
+  {
+    "name": "Blueberries",
+    "unit": "Kilogram",
+    "price": "$11.00",
+    "stock": 4,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Sugar",
+    "unit": "Kilogram",
+    "price": "$1.80",
+    "stock": 18,
+    "status": "In Stock"
+  },
+  {
+    "name": "Cream Cheese",
+    "unit": "Kilogram",
+    "price": "$10.50",
+    "stock": 5,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Crust",
+    "unit": "Kilogram",
+    "price": "$4.00",
+    "stock": 6,
+    "status": "In Stock"
+  },
+  {
+    "name": "Bread",
+    "unit": "Kilogram",
+    "price": "$3.20",
+    "stock": 10,
+    "status": "In Stock"
+  },
+  {
+    "name": "Chicken",
+    "unit": "Kilogram",
+    "price": "$8.90",
+    "stock": 7,
+    "status": "In Stock"
+  },
+  {
+    "name": "Lettuce",
+    "unit": "Kilogram",
+    "price": "$3.50",
+    "stock": 5,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Tomato",
+    "unit": "Kilogram",
+    "price": "$4.20",
+    "stock": 6,
+    "status": "In Stock"
+  },
+  {
+    "name": "Croutons",
+    "unit": "Kilogram",
+    "price": "$3.80",
+    "stock": 4,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Dressing",
+    "unit": "Liter",
+    "price": "$5.00",
+    "stock": 5,
+    "status": "Low Stock"
+  },
+  {
+    "name": "Bagel",
+    "unit": "Piece",
+    "price": "$1.50",
+    "stock": 14,
+    "status": "In Stock"
+  }
+]

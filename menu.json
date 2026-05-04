@@ -1,0 +1,175 @@
+[
+  {
+    "name": "Espresso",
+    "category": "Coffee",
+    "price": "18.50",
+    "discription": "this is a placeholder",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Water": "0.25L"
+    }
+  },
+  {
+    "name": "Americano",
+    "category": "Coffee",
+    "price": "20.00",
+    "discription":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellendus quasi iure rem cupiditate adipisci. Dignissimos, incidunt accusantium ipsa alias temporibus quibusdam cupiditate dolores odio delectus rem, ea ipsam repellat?",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Water": "0.35L"
+    }
+  },
+  {
+    "name": "Latte",
+    "category": "Coffee",
+    "price": "22.50",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Milk": "0.40L"
+    }
+  },
+  {
+    "name": "Cappuccino",
+    "category": "Coffee",
+    "price": "22.50",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Milk": "0.35L",
+      "Foam": "0.10L"
+    }
+  },
+  {
+    "name": "Mocha",
+    "category": "Coffee",
+    "price": "24.00",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Milk": "0.35L",
+      "Chocolate Syrup": "0.05L"
+    }
+  },
+  {
+    "name": "Flat White",
+    "category": "Coffee",
+    "price": "23.00",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Milk": "0.30L"
+    }
+  },
+  {
+    "name": "Macchiato",
+    "category": "Coffee",
+    "price": "21.00",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Milk Foam": "0.05L"
+    }
+  },
+  {
+    "name": "Cold Brew",
+    "category": "Coffee",
+    "price": "25.00",
+    "ingredients": {
+      "Coffee Beans": "0.15kg",
+      "Water": "0.40L"
+    }
+  },
+  {
+    "name": "Iced Latte",
+    "category": "Coffee",
+    "price": "24.50",
+    "ingredients": {
+      "Coffee Beans": "0.12kg",
+      "Milk": "0.35L",
+      "Ice": "0.20kg"
+    }
+  },
+  {
+    "name": "Hot Chocolate",
+    "category": "Non-Coffee",
+    "price": "19.00",
+    "ingredients": {
+      "Milk": "0.35L",
+      "Chocolate Powder": "0.08kg"
+    }
+  },
+  {
+    "name": "Green Tea",
+    "category": "Tea",
+    "price": "16.00",
+    "ingredients": {
+      "Tea Leaves": "0.05kg",
+      "Water": "0.30L"
+    }
+  },
+  {
+    "name": "Chai Latte",
+    "category": "Tea",
+    "price": "21.00",
+    "ingredients": {
+      "Tea Mix": "0.06kg",
+      "Milk": "0.35L"
+    }
+  },
+  {
+    "name": "Croissant",
+    "category": "Pastry",
+    "price": "15.00",
+    "ingredients": {
+      "Flour": "0.20kg",
+      "Butter": "0.08kg"
+    }
+  },
+  {
+    "name": "Blueberry Muffin",
+    "category": "Pastry",
+    "price": "14.00",
+    "ingredients": {
+      "Flour": "0.18kg",
+      "Blueberries": "0.06kg",
+      "Sugar": "0.03kg"
+    }
+  },
+  {
+    "name": "Cheesecake Slice",
+    "category": "Dessert",
+    "price": "26.00",
+    "ingredients": {
+      "Cream Cheese": "0.12kg",
+      "Sugar": "0.04kg",
+      "Crust": "0.06kg"
+    }
+  },
+  {
+    "name": "Club Sandwich",
+    "category": "Food",
+    "price": "32.00",
+    "ingredients": {
+      "Bread": "0.20kg",
+      "Chicken": "0.12kg",
+      "Lettuce": "0.04kg",
+      "Tomato": "0.05kg"
+    }
+  },
+  {
+    "name": "Caesar Salad",
+    "category": "Food",
+    "price": "28.00",
+    "ingredients": {
+      "Lettuce": "0.12kg",
+      "Chicken": "0.10kg",
+      "Croutons": "0.05kg",
+      "Dressing": "0.04L"
+    }
+  },
+  {
+    "name": "Bagel with Cream Cheese",
+    "category": "Food",
+    "price": "18.00",
+    "ingredients": {
+      "Bagel": "1pc",
+      "Cream Cheese": "0.05kg"
+    }
+  }
+]
