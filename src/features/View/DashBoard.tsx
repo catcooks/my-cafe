@@ -9,57 +9,57 @@ const DashBoard: React.FC = () => {
   const { reservations, isLoading, error } = useReservations();
 
   return (
-    <div style={{ width: "100%", flex: 1, boxSizing: "border-box"}}>
+    <div style={{ width: "100%", maxWidth: "1600px" }}>
       <h1 style={{ fontSize: "40px", padding: "15px", marginBottom: "0px" }}>
         Dashboard
       </h1>
       <div style={{
-          overflow: "auto"
-        }}>
+        overflow: "auto"
+      }}>
         <div
-          className="card-container"
+          className="dashboard-grid"
           style={{
             display: "flex",
-            flexDirection: "row",
             flexWrap: "wrap",
-            gap: "10px",
+            gap: "20px",
             padding: "10px",
-            margin: "10px auto",
-            justifyContent: "center",
+            width: "100%",
+            boxSizing: "border-box"
           }}
         >
-          <Card title="Daily Revenue" icon={<TrendingUp size={24} />} num="2,350" style={{ height:"130px", width:"23%", margin:"" }}/>
-          <Card title="Live Orders" icon={<Clock size={24} />} num="123" style={{ height:"130px", width:"23%", margin:"" }}/>
-          <Card title="Occupied Tables" icon={<Table size={24} />} num="1/5" style={{ height:"130px", width:"23%", margin:"" }}/>
-          <Card title="Staff on Duty" icon={<Users size={24} />} num="2" style={{ height:"130px", width:"23%", margin:"" }}/>
+          <Card title="Daily Revenue" icon={<TrendingUp size={24} />} num="2,350" style={{ height: "130px", flex: "1 1 240px" }} />
+          <Card title="Live Orders" icon={<Clock size={24} />} num="123" style={{ height: "130px", flex: "1 1 240px" }} />
+          <Card title="Occupied Tables" icon={<Table size={24} />} num="1/5" style={{ height: "130px", flex: "1 1 240px" }} />
+          <Card title="Staff on Duty" icon={<Users size={24} />} num="2" style={{ height: "130px", flex: "1 1 240px" }} />
         </div>
         <div
-          className="card-container"
+          className="dashboard-details"
           style={{
             display: "flex",
-            flexDirection: "row",
             flexWrap: "wrap",
-            gap: "10px",
-            justifyContent: "center",
+            gap: "20px",
+            padding: "10px",
+            width: "100%",
+            boxSizing: "border-box"
           }}
         >
-          <div className="card" style={{ width: "45%", maxHeight:"200px" }}>
-            <h3 style={{paddingTop:"0", marginTop:"0"}}>Recent Orders</h3>
+          <div className="card" style={{ flex: "1 1 400px", minHeight: "200px" }}>
+            <h3 style={{ paddingTop: "0", marginTop: "0" }}>Recent Orders</h3>
           </div>
           <div
             className="card"
             style={{
-              width: "45%",
+              flex: "1 1 400px",
               display: "flex",
               flexDirection: "column",
               alignItems: "stretch",
-              maxHeight: "250px"
+              minHeight: "250px"
             }}
           >
-              <h3 style={{borderBottom: "1px solid var(--border)", paddingBottom: "10px", marginBottom: "16px", textAlign: "left", paddingTop:"0", marginTop:"0"}}>
-                Upcoming Reservations
-              </h3>
-            <div style={{ overflow: "auto"}}>
+            <h3 style={{ borderBottom: "1px solid var(--border)", paddingBottom: "10px", marginBottom: "16px", textAlign: "left", paddingTop: "0", marginTop: "0" }}>
+              Upcoming Reservations
+            </h3>
+            <div style={{ overflow: "auto",width:"100%" }}>
               {isLoading && <p style={{ opacity: 0.7 }}>Loading reservations...</p>}
               {error && <p style={{ color: "red" }}>{error}</p>}
               {!isLoading &&

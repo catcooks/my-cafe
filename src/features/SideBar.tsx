@@ -1,11 +1,11 @@
 import BarItem from "../components/BarItem";
 import ThemeToggle from "../components/ThemeToggle";
-import { 
-  LayoutDashboard, 
-  UtensilsCrossed, 
-  Users, 
-  ClipboardList, 
-  Package, 
+import {
+  LayoutDashboard,
+  UtensilsCrossed,
+  Users,
+  ClipboardList,
+  Package,
   Settings,
   Table,
 } from 'lucide-react';
@@ -19,54 +19,37 @@ interface SideBarProps {
 const SideBar: React.FC<SideBarProps> = ({ title, activeTab, setActiveTab }) => {
   // 2. Local useState is removed. We use the props instead.
   return (
-    <div
-      style={{
-        padding: "20px",
-        border: "1px solid var(--border)",
-        borderRadius: "8px",
-        width: "15%",
-        alignItems: "baseline",
-        display: "flex",
-        flexDirection: "column",
-        gap: "16px",
-        flexShrink:0,
-        flexGrow:0
-      }}
-    >
-      <div style={{
-        display: "flex",
-        justifyContent: "space-between",
-        width: "100%"
-      }}>
-        <h1 style={{marginBottom: '0px' }}>{title}</h1>
-        <ThemeToggle/>
+    <div className="sidebar">
+      <div className="sidebar-header">
+        <h1 style={{ marginBottom: '0px' }}>{title}</h1>
+        <ThemeToggle />
       </div>
       <BarItem title="Dashboard" icon={<LayoutDashboard />}
-        isActive={activeTab === "Dashboard"} 
+        isActive={activeTab === "Dashboard"}
         onClick={() => setActiveTab("Dashboard")}
       />
       <BarItem title="Orders" icon={<ClipboardList />}
-        isActive={activeTab === "Orders"} 
+        isActive={activeTab === "Orders"}
         onClick={() => setActiveTab("Orders")}
       />
       <BarItem title="Products" icon={<UtensilsCrossed />}
-        isActive={activeTab === "Products"} 
+        isActive={activeTab === "Products"}
         onClick={() => setActiveTab("Products")}
       />
       <BarItem title="Staff" icon={<Users />}
-        isActive={activeTab === "Staff"} 
+        isActive={activeTab === "Staff"}
         onClick={() => setActiveTab("Staff")}
       />
       <BarItem title="Inventory" icon={<Package />}
-        isActive={activeTab === "Inventory"} 
+        isActive={activeTab === "Inventory"}
         onClick={() => setActiveTab("Inventory")}
       />
       <BarItem title="Reservations" icon={<Settings />}
-        isActive={activeTab === "Reservations"} 
+        isActive={activeTab === "Reservations"}
         onClick={() => setActiveTab("Reservations")}
       />
       <BarItem title="Tables" icon={<Table />}
-        isActive={activeTab === "Tables"} 
+        isActive={activeTab === "Tables"}
         onClick={() => setActiveTab("Tables")}
       />
     </div>

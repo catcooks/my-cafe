@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Javer Benito",
+    "role": "Head Barista",
+    "status": "On Duty",
+    "shift": "Morning",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria"
+  },
+  {
+    "id": 2,
+    "name": "Kimberly Rose Clemente",
+    "role": "Pastry Chef",
+    "status": "On Duty",
+    "shift": "Morning",
+    "image": "https://api.dicebear.com/9.x/avataaars/svg?backgroundColor[]&accessoriesProbability=0&facialHairProbability=0&hairColor=f59797&skinColor=ffdbb4&seed=Caleb"
+  },
+  {
+    "id": 3,
+    "name": "Elena Reyes",
+    "role": "Server",
+    "status": "Off Duty",
+    "shift": "Afternoon",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena"
+  },
+  {
+    "id": 4,
+    "name": "Ricardo Gomez",
+    "role": "Barista",
+    "status": "Off Duty",
+    "shift": "Afternoon",
+    "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ricardo"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  { "id": 1, "number": "T-1", "capacity": 2, "status": "Occupied", "x": 100, "y": 100 },
+  { "id": 2, "number": "T-2", "capacity": 2, "status": "Available", "x": 250, "y": 100 },
+  { "id": 3, "number": "T-3", "capacity": 4, "status": "Occupied", "x": 400, "y": 100 },
+  { "id": 4, "number": "T-4", "capacity": 4, "status": "Reserved", "x": 100, "y": 250 },
+  { "id": 5, "number": "T-5", "capacity": 6, "status": "Available", "x": 300, "y": 250 },
+  { "id": 6, "number": "B-1", "capacity": 1, "status": "Occupied", "x": 550, "y": 100 },
+  { "id": 7, "number": "B-2", "capacity": 1, "status": "Available", "x": 550, "y": 180 },
+  { "id": 8, "number": "B-3", "capacity": 1, "status": "Available", "x": 550, "y": 260 }
+]

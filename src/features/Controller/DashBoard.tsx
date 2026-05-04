@@ -26,9 +26,6 @@ const Reservation: React.FC<ReservationProps> = ({
         borderRadius: "8px",
         background: "var(--bg)",
         transition: "all 0.2s ease",
-        width: "80%",
-        marginLeft: "auto",
-        marginRight: "auto" 
       }}
     >
       <div

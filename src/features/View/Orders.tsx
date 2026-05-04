@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import MenuItem from "../../components/MenuItem"; // adjust path if needed
-import { useMenu } from "../../hooks/Menu"; // Importing your custom hook
-import { Plus, Minus } from "lucide-react";
+import MenuItem from "../../components/MenuItem";
+import { useMenu } from "../../hooks/Menu";
+import { CurrentOrder } from "../Controller/Orders";
+
 interface OrderItem {
   name: string;
   price: number | string;
@@ -60,19 +61,19 @@ const Orders: React.FC = () => {
   }, 0);
 
   return (
-    <div style={{ width: "100%", flex: 1, boxSizing: "border-box" }}>
-      <h1 style={{ fontSize: "40px", padding: "15px", marginBottom: "0px" }}>
+    <div style={{ width: "100%" }}>
+      <h1 style={{ fontSize: "40px", padding: "15px", marginBottom: "0px"}}>
         Orders
       </h1>
       
       <div style={{ 
-        display: "grid", 
-        gridTemplateColumns: "minmax(0, 1fr) 350px", 
-        gap: "20px", 
+        display:"flex",
+        gap: "24px", 
         margin: "10px",
-        alignItems: "start" 
+        alignItems: "start"
+
       }}>
-        <div>
+        <div style={{width:"65%"}}>
           <nav 
             className="filter" 
             style={{
@@ -109,9 +110,8 @@ const Orders: React.FC = () => {
               display: "flex",
               flexWrap: "wrap",
               gap: "15px",
-              width: "100%",
               overflowY: "auto", 
-              maxHeight:"320px"
+              maxHeight:"300px"
             }}
           >
             {loading ? (
@@ -130,50 +130,13 @@ const Orders: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="card" style={{ 
-          width: "100%", 
-          padding: "15px",
-          boxSizing: "border-box", 
-        }}>
-          <div style={{margin: "0px", justifyContent:"space-between", display:"flex", width:"100%"}}> 
-            <h1 style={{margin:"0px", fontSize: "32px",  paddingBottom:"5px", border:"0px" }}>Current Order</h1>
-            <p style={{ marginTop: "0px", fontSize: "12px", color: "gray", paddingBottom:"0px" }}>#1234</p>
-          </div>
-
-          <div style={{ 
-            borderTop: "1px solid var(--border)", 
-            borderBottom: "1px solid var(--border)", 
-            width: "100%", 
-            minHeight:"250px",
-            maxHeight:"270px", 
-            overflowY: "auto", 
-            marginTop: "10px",
-          }}>
-            {orderItems.map((orderItem, index) => (
-              <div key={index} style={{ display: "flex", justifyContent: "space-between", border:"1px solid #e2e2e2", borderRadius:"10px", margin:"5px", padding:"0px 15px 10px 10px" }}>
-                <div style={{display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
-                  <p style={{ margin: "5px 0" }}>{orderItem.name}</p>
-                  <p style={{ margin: "-10px 0", fontSize:"12px" }}>qty. {orderItem.quantity}</p>
-                </div>
-                <div style={{display: "flex", flexDirection: "column", alignItems: "flex-end"}}>
-                  <p style={{ margin: "5px 0" }}>₱{(Number(orderItem.price) * orderItem.quantity).toFixed(2)}</p>
-                  <div style={{display:"flex", justifyContent:"space-between"}}>
-                    <button className="icon-btn" onClick={() => handleDecreaseQuantity(orderItem.name)}><Minus size={14} color="#ff7676"/></button>
-                    <button className="icon-btn" onClick={() => handleIncreaseQuantity(orderItem.name)}><Plus size={14} color="#99ff6d"/></button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div style={{ justifyContent:"space-between", display: "flex", width: "100%", fontWeight: "bold", fontSize: "18px" }}>
-            <p style={{padding:"0px", margin:"0px"}}>Total</p>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-              <p style={{padding:"0px", margin:"0px"}}>₱{totalPrice.toFixed(2)}</p>
-              <button style={{padding:"3%", borderRadius:"10px", whiteSpace:"nowrap" }}>Process Payment</button>
-            </div>
-          </div>
-        </div>
+          <CurrentOrder 
+            orderItems={orderItems}
+            handleIncreaseQuantity={handleIncreaseQuantity}
+            handleDecreaseQuantity={handleDecreaseQuantity}
+            totalPrice={totalPrice}
+            style={{ width:"100%", maxHeight: "70vh" }}
+          />
       </div>
     </div>
   );
